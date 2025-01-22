@@ -2,8 +2,14 @@ img {
     margin: auto !important;
 }
 
-*{
-	font-family: "Fira Code", monospace;
+* {
+    font-family: "Fira Code", monospace;
+}
+
+.code-wrapper {
+    display: flex;
+    justify-content: center;
+    width: fit-content !important;
 }
 
 .row {
@@ -13,12 +19,12 @@ img {
     gap: 1rem;
 }
 
-.reveal pre code{
-	max-height: 800px;
+.reveal pre code {
+    max-height: 800px;
 }
 
-.test{
-	background:red;
+.test {
+    background: red;
 }
 
 .col {
@@ -28,9 +34,8 @@ img {
     gap: 1rem;
 }
 
-
-section{
-	padding: 1rem 0;
+section {
+    padding: 1rem 0;
 }
 
 .spin {

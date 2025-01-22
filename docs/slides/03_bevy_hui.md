@@ -3,11 +3,11 @@
 <br/>
 <br/>
 
-- Stay close to bevy_ui <!-- .element: class="fragment" -->
-- Hot reload at any time <!-- .element: class="fragment" -->
-- Separate design from logic <!-- .element: class="fragment" -->
-- Simple API to wire up logic <!-- .element: class="fragment" -->
-- Some utility (Animations & Transitions) <!-- .element: class="fragment" -->
+- Stay close to bevy_ui
+- Hot reload at any time
+- Separate design from logic
+- Simple API to wire up logic
+- Some utility (Animations & Transitions)
 
 ---
 
