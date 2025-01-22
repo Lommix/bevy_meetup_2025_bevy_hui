@@ -115,3 +115,13 @@ fn main() {
 Useful for components, which do not require custom spawn logic.
 
 <!-- .element: class="fragment" -->
+
+---
+
+## Errors
+
+Context rich error handling
+
+<div class="row" style="max-height:55rem">
+    <video src="img/error.mp4" loop autoplay="true" />
+</div>

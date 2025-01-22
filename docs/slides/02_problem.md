@@ -18,3 +18,10 @@ _Downtime is the biggest killer for curiosity_
 
 - Design in Html, compile to native bevy UI.
 - Enjoy hot reloading into your running app and reuse your work.
+
+<br/>
+<br/>
+
+<div class="row">
+    <video src="img/hot_reload.mp4" loop autoplay="true" />
+</div>

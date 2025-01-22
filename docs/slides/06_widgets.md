@@ -17,7 +17,7 @@ Load and display an Aseprite animation from a asset path.
 
 ## Create a new binding
 
-```rust
+```rust[|3|7,8|10-13|15-17]
 fn attach_aseprite(
     In(entity): In<Entity>,
     tags_q: Query<&Tags>,
@@ -167,15 +167,15 @@ Using target resolves to the entity behind the template
 
 <br />
 
-```rust
+```rust[|2-4|6-16]
 fn update_slider_target(
     trigger: Trigger<UiChangedEvent>,
-    targets: Query<(&UiTarget, &Slider)>,
+    sliders: Query<(&UiTarget, &Slider)>,
     mut texts: Query<&mut Text>,
 ) {
     let slider_entity = trigger.entity();
 
-    let Ok((target, slider)) = targets.get(slider_entity) else {
+    let Ok((target, slider)) = sliders.get(slider_entity) else {
         return;
     };
 

@@ -78,7 +78,7 @@ Make them reusable
 
 _my_button.html_
 
-```html
+```html[|2-5|7-8,10]
 <template>
     <property name="primary">#131313</property>
     <property name="secondary">#AFAFBB</property>
