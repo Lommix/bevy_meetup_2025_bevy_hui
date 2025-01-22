@@ -1,0 +1,26 @@
+<template>
+    <property name="press"></property>
+    <property name="primary">#000</property>
+    <property name="secondary">#FFF</property>
+    <property name="text">Button</property>
+
+    <button
+        id="btn"
+        hover:background="#333"
+        pressed:background="#0aa"
+        background="{primary}"
+        height="80px"
+        width="100%"
+        on_press="{press}"
+        border="2px"
+        border_color="{secondary}"
+        hover:border_color="#FFF"
+        border_radius="5px"
+        justify_content="center"
+        align_items="center"
+    >
+        <text watch="btn" ease="cubic_in" delay="200ms" font_size="32px" font_color="#777" hover:font_color="#FFF">
+            {text}
+        </text>
+    </button>
+</template>

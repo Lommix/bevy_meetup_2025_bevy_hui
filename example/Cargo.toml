@@ -1,0 +1,34 @@
+[package]
+name = "example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.15.0", features = [
+  "dynamic_linking",
+  "file_watcher",
+  "multi_threaded",
+] }
+bevy_aseprite_ultra = "0.4.1"
+bevy_hui = "0.2.1"
+
+
+[[bin]]
+name = "hello"
+path = "src/hello.rs"
+
+[[bin]]
+name = "button"
+path = "src/button.rs"
+
+[[bin]]
+name = "reuse"
+path = "src/button_reuse.rs"
+
+[[bin]]
+name = "aseprite"
+path = "src/aseprite.rs"
+
+[[bin]]
+name = "slider"
+path = "src/slider.rs"

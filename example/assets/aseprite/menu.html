@@ -1,0 +1,92 @@
+<template>
+    <node
+        margin="100px"
+        row_gap="50px"
+        display="grid"
+    >
+        <!--- button demo -->
+        <button
+            border="5px"
+            border_color="#FFF"
+            background="#222"
+            border_radius="5px"
+            padding="10px"
+            hover:padding="15px 10px"
+            pressed:background="#440"
+            hover:border_color="#0F0"
+            hover:width="220px"
+            hover:height="220px"
+            delay="100ms"
+        >
+            <text font_size="80">999</text>
+            <node
+                width="100px"
+                height="100px"
+            >
+                <aseprite source="coin.aseprite" />
+            </node>
+        </button>
+
+        <!--- welcome screen -->
+        <node
+            justify_content="center"
+            align_items="center"
+            width="400px"
+            height="400px"
+        >
+            <node
+                watch="btn"
+                border_radius="5px"
+                border="10px"
+                border_color="#555568"
+                hover:border_color="#a0a08b"
+                delay="200ms"
+                shadow_color="#666686"
+                hover:shadow_color="#c0c08b"
+                hover:shadow_blur="20px"
+                shadow_blur="5px"
+                shadow_offset="0 0"
+                shadow_spread="0px"
+            >
+                <node
+                    watch="btn"
+                    hover:height="320px"
+                    delay="200ms"
+                    ease="cubic_out"
+                    height="300px"
+                >
+                    <aseprite
+                        watch="btn"
+                        source="cat.aseprite"
+                        animation="bongo"
+                    />
+                </node>
+
+                <node
+                    position="absolute"
+                    width="100%"
+                    bottom="-8%"
+                    justify_content="center"
+                >
+                    <button
+                        id="btn"
+                        background="#555568"
+                        hover:background="#a0a08b"
+                        padding="10px 3px"
+                        border_radius="10px"
+                        delay="200ms"
+                        ease="cubic_out"
+                    >
+                        <text
+                            watch="btn"
+                            hover:font_color="#000"
+                            font_size="32"
+                        >
+                            Play
+                        </text>
+                    </button>
+                </node>
+            </node>
+        </node>
+    </node>
+</template>
