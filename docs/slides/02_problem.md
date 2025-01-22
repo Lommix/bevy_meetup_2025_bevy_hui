@@ -1,9 +1,9 @@
----
 ## Bevy UI is not easy
 
 - very verbose <!-- .element: class="fragment" -->
 - wait for compilation <!-- .element: class="fragment" -->
 - difficult to reuse and refactor <!-- .element: class="fragment" -->
+
 ---
 
 _Downtime is the biggest killer for curiosity_
